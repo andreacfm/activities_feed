@@ -13,11 +13,16 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Run the installer:
 
-    $ gem install custom_streams
+    rails g custom_streams:install
+
+And then run the generated migration:
+
+    rake db:migrate
 
 ## Usage
+
 
 ## Contributing
 

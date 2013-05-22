@@ -11,8 +11,8 @@ describe Document do
       document.create_activity("new_activity")
     end
     specify { Activity.count.should eq 1 }
-    specify { Activity.first.owner_id.should eq document.id }
-    specify { Activity.first.owner_type.should eq 'Document' }
+    specify { Activity.first.streamable_id.should eq document.id }
+    specify { Activity.first.streamable_type.should eq 'Document' }
     specify { Activity.first.name.should eq 'new_activity' }
   end
 
