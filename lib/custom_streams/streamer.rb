@@ -18,7 +18,7 @@ module CustomStreams
         define_method :create_activity do |activity|
           namespace = streamer_options.fetch(:namespace, nil)
           name = namespace ? "#{namespace}.#{activity}" : activity
-          Activity.create streamable_id: self.id, streamable_type: self.class.to_s, name: name
+          self.activities.create name: name
         end
 
         define_method :stream do |args={}|
