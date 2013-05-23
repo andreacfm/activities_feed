@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'custom_streams/version'
+require 'activities_feed/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "custom_streams"
-  spec.version       = CustomStreams::VERSION
+  spec.name          = "activities_feed"
+  spec.version       = ActivitiesFeed::VERSION
   spec.authors       = ["Andrea Campolonghi"]
   spec.email         = ["acampolonghi@gmail.com"]
-  spec.description   = %q{Create custom activities streams from a streamer "Model"}
-  spec.summary       = %q{Create custom activities streams from a streamer "Model"}
-  spec.homepage      = ""
+  spec.description   = %q{Create an incremental activities feed applying a feedable role to Models}
+  spec.summary       = %q{Create an incremental activities feed applying a feedable role to Models}
+  spec.homepage      = "https://github.com/andreacfm/activities_feed"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

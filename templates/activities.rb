@@ -1,14 +1,14 @@
 class CreateActivities < ActiveRecord::Migration
   def self.up
     create_table :activities do |t|
-      t.integer   :streamable_id, :null => false
-      t.string    :streamable_type, :name, :null => false
+      t.integer   :feedable_id, :null => false
+      t.string    :feedable_type, :name, :null => false
       t.string    :name, :null => false
       t.timestamps
     end
 
-    add_index :activities, :streamable_type
-    add_index :activities, :streamable_id
+    add_index :activities, :feedable_type
+    add_index :activities, :feedable_id
   end
 
   def self.down

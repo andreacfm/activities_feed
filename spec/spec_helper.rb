@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'active_record'
 require 'sqlite3'
-require 'custom_streams'
+require 'activities_feed'
 require_relative '../templates/activities'
 
 Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each { |f| require f }

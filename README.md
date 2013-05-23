@@ -1,13 +1,13 @@
-# CustomStreams
+# Activities Feed
 
-Create custom activities streams from a streamer "Model".
+Create an incremental activities feed applying a feedable role to Models.
 Just an idea up to now.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'custom_streams'
+    gem 'activities_feed'
 
 And then execute:
 
@@ -15,7 +15,7 @@ And then execute:
 
 Run the installer:
 
-    rails g custom_streams:install
+    rails g activities_feed:install
 
 And then run the generated migration:
 

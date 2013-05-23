@@ -1,3 +1,3 @@
 class Document < ActiveRecord::Base
-  streamer
+  feedable
 end

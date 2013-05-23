@@ -1,3 +1,3 @@
-module CustomStreams
+module ActivitiesFeed
   VERSION = "0.0.3"
 end

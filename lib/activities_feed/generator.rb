@@ -1,6 +1,6 @@
 require "rails/generators/base"
 
-module CustomStreams
+module ActivitiesFeed
   class InstallGenerator < ::Rails::Generators::Base
     source_root File.dirname(__FILE__) + "/../../templates"
 
